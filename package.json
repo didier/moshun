@@ -7,17 +7,26 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.1.1",
-		"@sveltejs/kit": "^2.5.4",
+		"@sveltejs/adapter-auto": "^3.2.0",
+		"@sveltejs/kit": "^2.5.5",
 		"@sveltejs/vite-plugin-svelte": "^3.0.2",
+		"@typescript-eslint/eslint-plugin": "^7.4.0",
+		"@typescript-eslint/parser": "^7.4.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.35.1",
+		"prettier": "^3.2.5",
+		"prettier-plugin-svelte": "^3.2.2",
 		"svelte": "5.0.0-next.80",
-		"svelte-check": "^3.6.7",
+		"svelte-check": "^3.6.8",
 		"tslib": "^2.6.2",
-		"typescript": "^5.4.2",
-		"vite": "^5.1.6"
+		"typescript": "^5.4.3",
+		"vite": "^5.2.7"
 	},
 	"type": "module"
 }
