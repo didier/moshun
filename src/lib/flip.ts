@@ -5,6 +5,7 @@ class Flip {
 	selector
 	defaults
 
+	// The constructor takes a selector and an optional object of default options.
 	constructor(selector: string, defaults: Options = {}) {
 		this.selector = selector
 		this.defaults = defaults
@@ -90,6 +91,7 @@ class Flip {
 		const { promise, resolve } = Promise.withResolvers()
 		const promises: Promise<void>[] = []
 
+		// Measure the elements before and after the layout change.
 		const first = this.measure()
 
 		requestAnimationFrame(() => {
@@ -101,7 +103,9 @@ class Flip {
 					delay: i * stagger + delay,
 					easing
 				})
-				promises.push(promise)
+
+				// Promise is of type `unknown`, so we need to cast it to `Promise<void>`. This is okay because we don't care about the return value.
+				promises.push(promise as Promise<void>)
 			}
 
 			Promise.all(promises).then(resolve)
@@ -111,6 +115,7 @@ class Flip {
 	}
 }
 
+// The `createFlip` function is a factory function that creates a new instance of the `Flip` class.
 export function createFlip(selector: string, defaults: Options = {}) {
 	return new Flip(selector, defaults)
 }

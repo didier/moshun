@@ -2,6 +2,14 @@
 
 A simple library for creating FLIP (first, last, invert, play) animations.
 
+## Progress
+
+- [x] Animate position
+- [x] Animate width, height
+- [x] Animate grid layout
+- [ ] Animate opacity
+- [ ] Animate rotation and scale
+
 ## Credits
 
 Most of this code is based on [this repository](https://github.com/joysofcode/flip-animation-library.git) by [Joy of Code](https://www.youtube.com/@JoyofCodeDev) and this [video](https://youtu.be/idD9DA9eR_A).
