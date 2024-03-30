@@ -1,30 +1,26 @@
-# FLIP Animation Library
+# mōshun
 
-Create a simple FLIP animation library using the Web Animations API to do impossible layout animations.
+A simple library for creating FLIP (first, last, invert, play) animations.
 
-## Video
+## Credits
 
-🍿 https://youtu.be/idD9DA9eR_A
-
-## Remote Development
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/joysofcode/flip-animation-library)
+Most of this code is based on [this repository](https://github.com/joysofcode/flip-animation-library.git) by [Joy of Code](https://www.youtube.com/@JoyofCodeDev) and this [video](https://youtu.be/idD9DA9eR_A).
 
 ## Local Development
 
-### 🧑‍🤝‍🧑 Clone the project
+### Clone the project
 
 ```sh
-https://github.com/joysofcode/flip-animation-library.git
+gh repo clone didier/moshun
 ```
 
-### 📦️ Install dependencies
+### Install dependencies
 
 ```sh
 pnpm i
 ```
 
-### 💿️ Run the development server
+### Run the development server
 
 ```sh
 pnpm run dev
